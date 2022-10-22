@@ -91,7 +91,8 @@ This is an example of how to list things you need to use the software and how to
 * Search Input added to favorite page and main page possibiliting to search for pokemon's name or type :white_check_mark:
 * Its possible to favorite a pokemon in the main page and in the detail page :white_check_mark:
 * On main page, besides name and image, every card has the type (or types) icon of pokemon :white_check_mark:
-* On detail page, the user can change for the next or previous pokemon using a button based on ID of each pokemon
+* On detail page, the user can change for the next or previous pokemon using a button based on ID of each pokemon :white_check_mark:
+
 
 ### Technical
 * The application should be implemented in React. :white_check_mark:
@@ -106,4 +107,5 @@ This is an example of how to list things you need to use the software and how to
 * On the README file of GitHub, should be mentioned the following information: small description of the application, functional and technical requirements accomplished, technologies used, and the steps of installation. :white_check_mark:
 
 #### Technical Plus
-* Demo Website on Vercel trough the link <a href="https://google.com" target="_blank">DEMO</a>
+* Demo Website on Vercel trough the link <a href="https://pokeapi-challenge-eight.vercel.app/" target="_blank">DEMO</a> :white_check_mark:
+* LocalStorage implemented to save favorite pokemons :white_check_mark:
