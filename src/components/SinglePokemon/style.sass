@@ -1,0 +1,66 @@
+@font-face
+    font-family: pokemon
+    src: url('pokemon-font.ttf')
+
+$medium: 768px
+
+.grid
+    display: grid
+    grid-template-columns: 1fr 1fr
+    padding: 40px 2%
+    gap: 80px
+
+    @media screen and (max-width: $medium)
+        grid-template-columns: 1fr
+        gap: 15px
+
+    .images
+        align-self: center
+        justify-self: center
+        display: flex
+        gap: 20px
+        width: 100%
+
+        img
+            width: 100%
+
+    .content
+        display: grid
+        grid-template-columns: 1fr
+        background: #30A7D7
+        padding: 40px 20px
+        border-radius: 20px
+
+        .info
+            display: flex
+            justify-self: flex-start
+            text-transform: capitalize
+            gap: 25px
+            align-items: center
+            border-bottom: 1px solid #fff
+            width: 100%
+            padding: 10px 0px
+
+            .multiple-infos
+                display: flex
+                gap: 20px
+
+                .double-properties:first-child::after
+                    content: '|'
+                    margin-left: 20px
+
+            p
+                color: #fff
+                font-size: 14px
+                font-family: 'pokemon'
+
+            h2
+                font-size: 24px
+                font-family: 'Montserrat'
+                font-weight: normal
+                display: flex
+                align-items: center
+                gap: 10px
+
+                @media screen and (max-width: $medium)
+                    font-size: 16px

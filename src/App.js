@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from "react-redux";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createStore } from "redux";
+import "./App.css";
+import Favorites from "./pages/Favorites";
+import Home from "./pages/Home";
+import Pokemon from "./pages/Pokemon";
+import favoritePokemonsReducer from "./reducers/favoritePokemonsReducer";
 
 function App() {
+  const store = createStore(
+    favoritePokemonsReducer
+  ); /* CREATING STORAGE TO PROVIDE REDUCER */
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Provider store={store}>
+        {" "}
+        {/* PROVIDING REDUCERS FOR EVERY CHILD */}
+        <BrowserRouter>
+          <Routes>
+            <Route path="/">
+              <Route index element={<Home />} /> {/* HOMEPAGE - SIMPLE INDEX */}
+              <Route exact path="/pokemon/:id" element={<Pokemon />} />{" "}
+              {/* DYNAMIC PAGE TO LOAD SINGLEPAGE WITH POKEMON ID */}
+              <Route path="/favorites" element={<Favorites />} />{" "}
+              {/* FAVORITE PAGE */}
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </Provider>
     </div>
   );
 }
