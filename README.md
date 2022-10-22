@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary id="summary">Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#requirements-accomplished">Requirements Accomplished</a>
+      <ul>
+        <li><a href="#functional">Functional</a></li>
+        <li><a href="#technical">Technical</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-### `npm start`
+This project was developed to accomplish a Front End Challenge. It consists in a Pokemon Web Application that accesses the PokeApi and display to the user a complete list of pokemons with name, picture, type and the possibility of favorite any pokemon to be shown in another page. It's possible to navigate to single pokemon page and see more details of it.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="right">(<a href="#summary">back to top</a>)</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Built With
 
-### `npm run build`
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+* ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="right">(<a href="#summary">back to top</a>)</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- GETTING STARTED -->
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repo
+   ```sh
+   git clone https://github.com/tiagodev96/pokeapi-challenge
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Execute project
+   ```js
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#summary">back to top</a>)</p>
 
-### Code Splitting
+<!-- REQUIREMENTS ACCOMPLISHED -->
+## Requirements Accomplished
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Functional
+* The user should be able to see a main screen with a list of all Pokémons (with corresponding name and image for each of them). :white_check_mark:
+* In the main page: apply pagination in the list of Pokémons. :white_check_mark:
+* From the main page, while clicking a Pokémon, the user should be able to navigate to another page containing the details of that Pokémon. The user should also be able navigate to the details page of a Pokemon by refreshing the same page. :white_check_mark:
+* In the Pokémon details page, the user should see at least 6 descriptions, the image and the name of one Pokémon. :white_check_mark:
+* In the Pokémon detail page, the user should be able to favorite the Pokémon. :white_check_mark:
+* From the main page, the user should be able to navigate to another page. This page should contain a list of the favorite Pokémons (with corresponding name and image for each of them). :white_check_mark:
 
-### Analyzing the Bundle Size
+#### Functional Plus
+* Search Input added to favorite page and main page possibiliting to search for pokemon's name or type :white_check_mark:
+* Its possible to favorite a pokemon in the main page and in the detail page :white_check_mark:
+* On main page, besides name and image, every card has the type (or types) icon of pokemon :white_check_mark:
+* On detail page, the user can change for the next or previous pokemon using a button based on ID of each pokemon
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Technical
+* The application should be implemented in React. :white_check_mark:
+* To get the list of Pókemons and their details, use the PokéAPI: https://pokeapi.co/ (see documentation for more details). :white_check_mark:
+* For styling: use SASS, CSS Modules or CSS in JS :white_check_mark:
+* Usage of any UI framework adapted to React (Examples: Bootstrap, Semantic UI). :white_check_mark:
+* The app should be responsive (adapt UI so it can be displayed in different screen sizes). :white_check_mark:
+* The code should contain comments. :white_check_mark:
+* In React: usage of hooks, state management, redux, router. :white_check_mark:
+* Unit tests in functions and components. (Not perfectly implemented) :triangular_flag_on_post:
+* The application code should be submitted in GitHub. :white_check_mark:
+* On the README file of GitHub, should be mentioned the following information: small description of the application, functional and technical requirements accomplished, technologies used, and the steps of installation. :white_check_mark:
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Technical Plus
+* Demo Website on Vercel trough the link <a href="https://google.com" target="_blank">DEMO</a>
